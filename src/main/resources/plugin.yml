@@ -2,3 +2,7 @@ name: SummonWar
 version: '${version}'
 main: co.tantleffbeef.summonwar.SummonWar
 api-version: 1.19
+
+commands:
+  startgame:
+    description: Starts a new game of Summon War
