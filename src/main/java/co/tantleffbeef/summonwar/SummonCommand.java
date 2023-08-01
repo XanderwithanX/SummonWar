@@ -34,7 +34,7 @@ public class SummonCommand implements CommandExecutor {
         ItemStack I3 = new ItemStack(Material.WARPED_STEM);
         I3.getItemMeta().addItemFlags(ItemFlag.HIDE_ENCHANTS);
 
-        Inventory inv = Bukkit.createInventory(player, 9, ChatColor.DARK_BLUE + "Choose your team for Summon War");
+        Inventory inv = Bukkit.createInventory(player, 9, ChatColor.DARK_BLUE + "Choose your team!");
         inv.setItem(2, I1);
         inv.setItem(4, I2);
         inv.setItem(6, I3);
