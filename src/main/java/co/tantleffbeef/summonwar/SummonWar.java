@@ -7,6 +7,8 @@ public final class SummonWar extends JavaPlugin {
     @Override
     public void onEnable() {
         getCommand("startgame").setExecutor(new SummonCommand());
+
+        getServer().getPluginManager().registerEvents(new StartGameGUI(), this);
     }
 
     @Override
