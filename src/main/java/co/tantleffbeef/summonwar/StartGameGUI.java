@@ -18,8 +18,7 @@ public class StartGameGUI implements Listener {
     @EventHandler
     public void onClick(InventoryClickEvent event) {
         Player player = (Player) event.getWhoClicked();
-        Bukkit.broadcastMessage("Type: " + event.getInventory().getType() + ". Location: " + event.getInventory().getLocation());
-        if(event.getInventory().getType() == InventoryType.HOPPER && event.getInventory().getLocation() == null) {
+        if(event.getInventory().getSize() == 9 && event.getInventory().getLocation() == null) {
             event.setCancelled(true);
             int temp = event.getSlot();
 
